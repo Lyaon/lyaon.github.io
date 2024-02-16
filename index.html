@@ -11,6 +11,19 @@
     <div class="clock">
         Current time for me (PST): <span id="clock"></span>
     </div>
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const pstTime = new Date(now.getTime());
+            const hours = pstTime.getHours().toString().padStart(2, '0');
+            const minutes = pstTime.getMinutes().toString().padStart(2, '0');
+            const seconds = pstTime.getSeconds().toString().padStart(2, '0');
+            document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
     <br>
     <br>
     <br>
