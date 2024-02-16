@@ -1,0 +1,94 @@
+body {
+  background-color: rgb(2, 18, 49);
+  text-align: center;
+  font-size: 18px;
+  color: white;
+}
+
+h1, p, .image-overlay, .profile-info div, .clock {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 24px;
+}
+
+.image-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.image {
+  width: 150px;
+  height: auto;
+}
+
+.image-overlay {
+  text-align: left;
+  padding: 8px 16px;
+  margin-top: 5px;
+}
+
+.profile {
+  margin-top: 20px;
+}
+
+.profile-info {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.profile-info div {
+  margin-bottom: 5px;
+}
+
+.clock {
+  margin-top: 20px;
+}
+
+.game-container {
+  width: 1080px;
+  height: 450px; 
+  background-color: #f0f0f0;
+  border: 5px solid #000;
+  position: relative;
+  overflow: hidden; 
+  margin: auto; 
+}
+
+#player {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.obstacle {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#score {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  color: black; 
+}
+
+.instructions {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  display: none;
+}

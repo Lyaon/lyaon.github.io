@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Max's Portfolio</title>
+</head>
+<body>
+    <h1>Hi</h1>
+    <p>I am a guy named Lyaon, but most people call me Max. I make some odd bits of code and other things, and I am a maple syrup drinking Canadian ツ</p>
+    <br>
+    <div class="clock">
+        Current time for me (PST): <span id="clock"></span>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="image-container">
+            <img src="./media/github.png" alt="github" width="75" class="image">
+            <div class="image-overlay">github.com/lyaon</div>
+        </div>
+        <div class="image-container">
+            <img src="./media/discord.png" alt="discord" width="75" class="image">
+            <div class="image-overlay">@lyaon</div>
+        </div>
+    </div>
+    <br>
+    <div id="game-container" class="game-container">
+        <div id="player"></div>
+        <div class="obstacle"></div>
+        <div class="obstacle"></div>
+        <div class="obstacle"></div>
+        <div id="score">Score: <span id="score-value">0</span></div>
+        <button id="start-game">Start Game</button>
+        <div id="instructions" class="instructions">
+            <p>Use the left and right arrow keys to move the player character.</p>
+            <p>Avoid the red obstacles while collecting points.</p>
+            <p>The game ends if the player character collides with an obstacle.</p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
